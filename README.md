@@ -47,8 +47,8 @@ Update-Package -Reinstall
 
 ```xml
   <connectionStrings>
-	 <!-- Подключение базы данных -->
-    <add name="DefaultConnection" connectionString="Server=(localdb); Port=YourPort; Database=YourDatabaseName; User Id=YourUserName; Password=88888888;" providerName="Npgsql" />
+    <!-- Подключение базы данных -->
+    <add name="DefaultConnection" connectionString="Server=(localdb); Port=YourPort; Database=YourDatabaseName; User Id=YourUserName; Password=YourPassword;" providerName="Npgsql" />
   </connectionStrings>
  ```
 
