@@ -25,7 +25,8 @@ Make sure you have the following components installed on your computer:
 - PostgreSQL 16 (for local database)
 
 ### Installation Steps
-1. Clone the repository to your local computer:
+
+#### Clone the repository to your local computer:
  ```bash 
  git clone https://github.com/cobaltCorsair/TestProject.git
  ```
