@@ -46,9 +46,10 @@ Update-Package -Reinstall
 3. Modify the connection string to point to your database server. For example:
 
 ```xml
-<connectionStrings>
-  <add name="DefaultConnection" connectionString="Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=YourDatabaseName;Integrated Security=True" providerName="System.Data.SqlClient" />
-</connectionStrings>
+  <connectionStrings>
+	 <!-- Подключение базы данных -->
+    <add name="DefaultConnection" connectionString="Server=(localdb); Port=YourPort; Database=YourDatabaseName; User Id=YourUserName; Password=88888888;" providerName="Npgsql" />
+  </connectionStrings>
  ```
 
 #### Apply migrations to the database to restore the database schema
