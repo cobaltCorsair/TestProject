@@ -190,6 +190,10 @@
     <Compile Include="Migrations\202404120838435_InitialCreate.designer.cs">
       <DependentUpon>202404120838435_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202404121307505_DBChanges.cs" />
+    <Compile Include="Migrations\202404121307505_DBChanges.designer.cs">
+      <DependentUpon>202404121307505_DBChanges.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MyEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -284,6 +288,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202404120838435_InitialCreate.resx">
       <DependentUpon>202404120838435_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404121307505_DBChanges.resx">
+      <DependentUpon>202404121307505_DBChanges.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
