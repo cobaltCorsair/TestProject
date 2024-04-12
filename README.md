@@ -24,7 +24,34 @@ Make sure you have the following components installed on your computer:
 - .NET Framework 4.8 SDK
 - PostgreSQL 16 (for local database)
 
-#### Installation Steps
+### Installation Steps
 1. Clone the repository to your local computer:
- ```bash
+ ```bash 
  git clone https://github.com/cobaltCorsair/TestProject.git
+ ```
+#### Open the solution in Visual Studio
+- Open Visual Studio.
+- Navigate to `File` > `Open` > `Project/Solution`.
+- Browse to the location of the cloned repository and open the solution file (`*.sln`).
+
+#### Restore NuGet packages
+Restore the necessary NuGet packages by running the following command in the Package Manager Console:
+```bash
+Update-Package -Reinstall
+ ```
+#### Configure the connection string in the Web.config file
+1. Locate the Web.config file in the root of the project.
+2. Find the `<connectionStrings>` section.
+3. Modify the connection string to point to your database server. For example:
+
+```xml
+<connectionStrings>
+  <add name="DefaultConnection" connectionString="Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=YourDatabaseName;Integrated Security=True" providerName="System.Data.SqlClient" />
+</connectionStrings>
+ ```
+
+#### Apply migrations to the database to restore the database schema
+Apply the existing migrations to update the database schema by running the following command in the Package Manager Console:
+
+```bash
+Update-Database
