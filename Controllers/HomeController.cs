@@ -4,140 +4,114 @@ using System.Web.Mvc;
 using TestProject.Models;
 using TestTask.Data;
 using System.Data.Entity;
-using TestProject.Utils; 
+using TestProject.Filters;
 
 namespace TestProject.Controllers
 {
+    [HandleExceptions] // Применяем фильтр ко всему контроллеру
+    // Управление основными страницами приложения
     public class HomeController : Controller
     {
         private readonly ApplicationDbContext _db;
-
+        // Внедрение зависимостей для доступа к контексту базы данных
         public HomeController()
         {
             _db = new ApplicationDbContext();
         }
-
+        
+        // Показывает список сущностей
         public ActionResult Index()
         {
-            // Test
-            //throw new Exception("Test exception for logging.");
+            // Тестовая ошибка для проверки работоспособности лога
+            //throw new Exception("Test exception");
 
-            try
-            {
-                var myEntities = _db.MyEntities.ToList();
-                return View(myEntities);
-            }
-            catch (Exception ex)
-            {
-                Logger.LogException(ex);
-                return View("Error");
-            }
+            var myEntities = _db.MyEntities.ToList();
+            return View(myEntities);
         }
 
+        // Отображение формы для создания сущности
         public ActionResult Create()
         {
             return View(new MyEntity());
         }
 
+        // Обработка создания сущности
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(MyEntity myEntity)
         {
-            try
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
-                {
-                    _db.MyEntities.Add(myEntity);
-                    _db.SaveChanges();
-                    return RedirectToAction("Index");
-                }
-            }
-            catch (Exception ex)
-            {
-                Logger.LogException(ex);
-                ModelState.AddModelError("", "An error occurred while creating the entity.");
+                _db.MyEntities.Add(myEntity);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
             }
             return View(myEntity);
         }
 
+        // Подготовка к редактированию сущности
         public ActionResult Edit(int id)
         {
-            try
+            var myEntity = _db.MyEntities.Find(id);
+            if (myEntity == null)
             {
-                MyEntity myEntity = _db.MyEntities.Find(id);
-                if (myEntity == null)
-                {
-                    return HttpNotFound();
-                }
-                return View(myEntity);
+                return HttpNotFound();
             }
-            catch (Exception ex)
-            {
-                Logger.LogException(ex);
-                return View("Error");
-            }
+            return View(myEntity);
         }
 
+        // Обновление сущности после редактирования
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(MyEntity myEntity)
         {
-            try
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
-                {
-                    _db.Entry(myEntity).State = EntityState.Modified;
-                    _db.SaveChanges();
-                    return RedirectToAction("Index");
-                }
-            }
-            catch (Exception ex)
-            {
-                Logger.LogException(ex);
-                ModelState.AddModelError("", "An error occurred while updating the entity.");
+                _db.Entry(myEntity).State = EntityState.Modified;
+                _db.SaveChanges();
+                return RedirectToAction("Index");
             }
             return View(myEntity);
         }
 
+        // Удаление сущности
         public ActionResult Delete(int id)
         {
-            try
+            var myEntity = _db.MyEntities.Find(id);
+            if (myEntity == null)
             {
-                MyEntity myEntity = _db.MyEntities.Find(id);
-                if (myEntity == null)
-                {
-                    return HttpNotFound();
-                }
-                return View(myEntity);
+                return HttpNotFound();
             }
-            catch (Exception ex)
-            {
-                Logger.LogException(ex);
-                return View("Error");
-            }
+            return View(myEntity);
         }
 
+        // Подтверждение удаления сущности
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            try
+            var myEntity = _db.MyEntities.Find(id);
+            if (myEntity != null)
             {
-                MyEntity myEntity = _db.MyEntities.Find(id);
-                if (myEntity != null)
-                {
-                    _db.MyEntities.Remove(myEntity);
-                    _db.SaveChanges();
-                }
-                return RedirectToAction("Index");
+                _db.MyEntities.Remove(myEntity);
+                _db.SaveChanges();
             }
-            catch (Exception ex)
-            {
-                Logger.LogException(ex);
-                return View("Error");
-            }
+            return RedirectToAction("Index");
         }
 
+        // Информационная страница
+        public ActionResult About()
+        {
+            return View();
+        }
+
+        // Контактная информация
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
+        // Очистка ресурсов
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -145,34 +119,6 @@ namespace TestProject.Controllers
                 _db.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        public ActionResult About()
-        {
-            try
-            {
-                ViewBag.Message = "Description page.";
-                return View();
-            }
-            catch (Exception ex)
-            {
-                Logger.LogException(ex);
-                return View("Error");
-            }
-        }
-
-        public ActionResult Contact()
-        {
-            try
-            {
-                ViewBag.Message = "Contact page.";
-                return View();
-            }
-            catch (Exception ex)
-            {
-                Logger.LogException(ex);
-                return View("Error");
-            }
         }
 
     }

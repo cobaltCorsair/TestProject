@@ -1,66 +1,6 @@
-Time: 12.04.2024 12:54:41
-Exception: System.Web.HttpException (0x80004005): Не удалось найти общедоступный метод действия "DeleteConfirmed" на контроллере "TestProject.Controllers.HomeController".
-   в System.Web.Mvc.Controller.HandleUnknownAction(String actionName)
-   в System.Web.Mvc.Controller.<>c.<BeginExecuteCore>b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.<>c.<BeginProcessRequest>b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
-   в System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   в System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
-   в System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
------------
-Time: 12.04.2024 13:01:33
-Exception: System.Web.HttpException (0x80004005): Не удалось найти общедоступный метод действия "DeleteConfirmed" на контроллере "TestProject.Controllers.HomeController".
-   в System.Web.Mvc.Controller.HandleUnknownAction(String actionName)
-   в System.Web.Mvc.Controller.<>c.<BeginExecuteCore>b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.<>c.<BeginProcessRequest>b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
-   в System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   в System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
-   в System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
------------
-Time: 12.04.2024 13:15:07
-Exception: System.Web.HttpException (0x80004005): Не удалось найти общедоступный метод действия "About" на контроллере "TestProject.Controllers.HomeController".
-   в System.Web.Mvc.Controller.HandleUnknownAction(String actionName)
-   в System.Web.Mvc.Controller.<>c.<BeginExecuteCore>b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.<>c.<BeginProcessRequest>b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
-   в System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   в System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
-   в System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
------------
-Time: 12.04.2024 13:15:09
-Exception: System.Web.HttpException (0x80004005): Не удалось найти общедоступный метод действия "Contact" на контроллере "TestProject.Controllers.HomeController".
-   в System.Web.Mvc.Controller.HandleUnknownAction(String actionName)
-   в System.Web.Mvc.Controller.<>c.<BeginExecuteCore>b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.<>c.<BeginProcessRequest>b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
-   в System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   в System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
-   в System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
------------
-Time: 12.04.2024 13:54:56
-Exception: System.Exception: Test exception for logging.
-   в TestProject.Controllers.HomeController.Index() в C:\dev\TestProject\Controllers\HomeController.cs:строка 22
+Time: 12.04.2024 15:28:51
+Exception: System.Exception: Test exception
+   в TestProject.Controllers.HomeController.Index() в C:\dev\TestProject\Controllers\HomeController.cs:строка 23
    в lambda_method(Closure , ControllerBase , Object[] )
    в System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
    в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
@@ -71,22 +11,10 @@ Exception: System.Exception: Test exception for logging.
    в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
    в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
    в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
-   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.<>c.<BeginExecuteCore>b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.<>c.<BeginProcessRequest>b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
-   в System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   в System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
-   в System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
 -----------
-Time: 12.04.2024 13:56:19
-Exception: System.Exception: Test exception for logging.
-   в TestProject.Controllers.HomeController.Index() в C:\dev\TestProject\Controllers\HomeController.cs:строка 22
+Time: 12.04.2024 15:40:39
+Exception: System.Exception: Test exception
+   в TestProject.Controllers.HomeController.Index() в C:\dev\TestProject\Controllers\HomeController.cs:строка 26
    в lambda_method(Closure , ControllerBase , Object[] )
    в System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
    в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
@@ -97,31 +25,33 @@ Exception: System.Exception: Test exception for logging.
    в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
    в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
    в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
-   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.<>c.<BeginExecuteCore>b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.<>c.<BeginProcessRequest>b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
-   в System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   в System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
-   в System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
 -----------
-Time: 12.04.2024 14:19:27
-Exception: System.Web.HttpException (0x80004005): Не удалось найти общедоступный метод действия "About" на контроллере "TestProject.Controllers.HomeController".
-   в System.Web.Mvc.Controller.HandleUnknownAction(String actionName)
-   в System.Web.Mvc.Controller.<>c.<BeginExecuteCore>b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.<>c.<BeginProcessRequest>b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState)
-   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   в System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
-   в System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   в System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
-   в System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Time: 12.04.2024 15:40:45
+Exception: System.Exception: Test exception
+   в TestProject.Controllers.HomeController.Index() в C:\dev\TestProject\Controllers\HomeController.cs:строка 26
+   в lambda_method(Closure , ControllerBase , Object[] )
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+-----------
+Time: 12.04.2024 15:44:50
+Exception: System.ArgumentException: Словарь параметров содержит запись со значением NULL для параметра "id" типа "System.Int32", не допускающего значение NULL, для метода "System.Web.Mvc.ActionResult Edit(Int32)" в "TestProject.Controllers.HomeController". Необязательный параметр должен иметь ссылочный тип, тип, допускающий значение NULL, либо он должен быть объявлен как необязательный параметр.
+Имя параметра: parameters
+   в System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   в System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
 -----------
