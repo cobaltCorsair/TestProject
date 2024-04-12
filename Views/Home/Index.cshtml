@@ -1,0 +1,31 @@
+﻿@model IEnumerable<TestProject.Models.MyEntity>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Entities</h2>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Property1</th>
+        <th>Property2</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Property1</td>
+            <td>@item.Property2</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+</table>
+
+@Html.ActionLink("Create New", "Create")
